@@ -119,8 +119,13 @@ plot(sensi_lambda, sensi_B, 'b+', 'MarkerSize', 1)
 hold off
 grid on
 
-%%
-%stripe
+%% Plot: Spectral transmission interferences
+
+chart_y2_min_real = 400;
+chart_y2_max_real = 700;
+chart_y2_range = chart_y2_max_real - chart_y2_min_real;
+
+%coloured stripe
 idx_temp = (lambda_var >= 400) & (lambda_var <= 700);
 n_colors = sum(idx_temp);
 lambda_var2 = lambda_var(idx_temp);
@@ -129,7 +134,7 @@ HSV_output = rgb2hsv(RGB_output);
 
 %images
 H_image = repmat(HSV_output(1, :, 1)', [1, 1001]);
-sim_S_palette = repmat(0.6*ones([n_colors, 1]), [1, 1001]);
+sim_S_palette = repmat(0.5*ones([n_colors, 1]), [1, 1001]);
 st_rescaled = rescale(spectral_transmission(idx_temp, :), 0, 1);
 hsv_fig = cat(3, H_image, sim_S_palette, st_rescaled);
 rgb_fig = hsv2rgb(hsv_fig);
@@ -143,12 +148,6 @@ numrows = size(st_rgb, 1);
 numcols = round(st_chart_aspectR*numrows);
 st_rs = imresize(st_rgb, [numrows, numcols]);
 
-
-%% Plot: Spectral transmission interferences
-
-chart_y2_min_real = 400;
-chart_y2_max_real = 700;
-chart_y2_range = chart_y2_max_real - chart_y2_min_real;
 new_x_max = numcols;
 new_y_max = n_colors;
 
@@ -162,7 +161,7 @@ y_temp_labels = round(((real_y-400)*(new_y_max/chart_y2_range)));
 x_str = strsplit(num2str(real_x));
 y_str = strsplit(num2str(real_y));
 
-
+%Plot
 hFig = figure;
 imshow(st_rs)
 
@@ -184,7 +183,6 @@ xlabel('Retardation \Gamma (mm)')
 ylabel('Light spectrum \lambda (nm)')
 title('Spectral transmission interferences')
 
-
 %Re-fitting within figure
 set(gca, 'Position', [0.15,0.1, .7, 0.8])
 set(gcf, 'OuterPosition',[100, 100, 1200, 400]);
@@ -196,11 +194,6 @@ bottom = outerpos(2) + ti(2);
 ax_width = outerpos(3) - ti(1) - ti(3);
 ax_height = outerpos(4) - ti(2) - ti(4);
 ax.Position = [left bottom ax_width ax_height];
-
-%%
-figure,
-imshow(spectral_transmission ...
-    )
 
 %% Plots 1: Michel-Levy
 
