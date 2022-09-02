@@ -4,6 +4,6 @@ MatLab script for simulating a Michel-Levy colour chart. Written by Marco A. Ace
   *?_Zawischa_Leibniz university Hannover_HOW TO CALCULATE AND RENDER COLOURS IN THIN FILMS<br/>
   
 Plots:
-  ![spectral_transmissitivity](https://user-images.githubusercontent.com/61703106/188052557-984291f1-0558-49b0-acdb-0b5f4935abd1.png)
+  ![spectral_transmissitivity](https://user-images.githubusercontent.com/61703106/188053339-23bc81e0-f9f2-40d9-b9d7-ff8f1f039fe7.png)
   ![untitled](https://user-images.githubusercontent.com/61703106/187136526-fb36d2f0-33a1-40f0-bc7e-f223f107757b.png)
   ![soresen](https://user-images.githubusercontent.com/61703106/187344590-2db158f6-5594-4b74-8fd0-c7bcef64b5aa.png)
