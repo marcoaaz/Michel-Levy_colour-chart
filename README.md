@@ -1,8 +1,9 @@
 # Michel-Levy_colour-chart
 MatLab script for simulating a Michel-Levy colour chart. Written by Marco A. Acevedo Zamora, QUT. 26-Aug-2022, following the Fortran and unpublished code of:<br/> 
-  *2012_Zawischa_How to calculate and render colours in thin films<br/>
-  *2013_Sorensen_EJM_Simulating levy chart<br/>
-  *?_Zawischa_Leibniz university Hannover_HOW TO CALCULATE AND RENDER COLOURS IN THIN FILMS<br/>
+
+- 2012_Zawischa_How to calculate and render colours in thin films<br/>  
+- (unknown year)_Zawischa_Leibniz university Hannover_How to calculate and render colours in thin films<br/>
+- 2013_Sorensen_EJM_Simulating levy chart<br/>
   
 If using this code (or snippets), please cite the corresponding authors. You can follow the citation in MDPI and ACS Style:
 
