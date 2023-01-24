@@ -1,4 +1,4 @@
-# Michel-Levy_colour-chart
+# Michel-Levy colour chart (generated in MatLab)
 MatLab script for simulating a Michel-Levy colour chart. Written by Marco A. Acevedo Zamora, QUT. 26-Aug-2022, following the Fortran and unpublished code of:<br/> 
 
 - 2012_Zawischa_How to calculate and render colours in thin films<br/>  
